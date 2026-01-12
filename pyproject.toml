@@ -5,5 +5,5 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "sphinx>=9.1.0",
+    "mkdocs-material>=9.7.1",
 ]
