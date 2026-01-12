@@ -5,6 +5,7 @@ theme:
   name: material
   features:
     - content.action.edit
+    - navigation.footer
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
@@ -22,6 +23,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 plugins:
+  - search
   - git-authors:
       show_contribution: true
       show_line_count: true
@@ -40,3 +42,14 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: datetime
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/RqFJ79Q5
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/VelvetSystemsOfficial/
+    - icon: fontawesome/brands/github
+      link: https://github.com/VelvetSystems
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/velvet-systems/
