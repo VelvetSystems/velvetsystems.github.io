@@ -1,17 +1,42 @@
 site_name: Velvet Systems
+repo_url: https://github.com/VelvetSystems/velvetsystems.github.io
+edit_uri: edit/main/docs/
 theme:
   name: material
+  features:
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
   logo: assets/logo.png
   palette:
-
     # Palette toggle for light mode
     - scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+plugins:
+  - git-authors:
+      show_contribution: true
+      show_line_count: true
+      show_email_address: false
+      add_co_authors: false
+      href: "mailto:{email}"
+      count_empty_lines: true
+      fallback_to_empty: false
+      sort_authors_by: contribution
+      authorship_threshold_percent: 10
+      ignore_commits: .git-blame-ignore-revs
+      enabled: true
+      enabled_on_serve: true
+      strict: true
+
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: datetime
